@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Conta {
+    public static void main(String[] args) { 
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Por favor, digite o numero da Agência:");
+        String agencia = entrada.next();
+   
+        System.out.println("Por favor, digite o número da conta:");
+        int numero = entrada.nextInt();
+ 
+        System.out.println("Por favor, digite seu Nome:");
+        String nomeCliente = entrada.next();
+      
+        System.out.println("Por favor, digite seu Saldo:");
+        Double saldo = entrada.nextDouble();
+        
+        System.out.println();
+        System.out.println("Olá," + nomeCliente + "!");       
+        System.out.println("Sua agência é " + agencia + " e sua conta é " + numero + ".");
+        System.out.println("Seu saldo R$" + saldo + " já está disponível para saque.");
+        
+        entrada.close();
